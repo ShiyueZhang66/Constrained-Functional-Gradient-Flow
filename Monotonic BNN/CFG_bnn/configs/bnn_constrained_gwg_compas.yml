@@ -1,0 +1,23 @@
+training:
+  batch_size: 200
+  n_particle: 200
+  particle_lr: 5.0e-5
+  edge_width: 0.02
+  n_iter: 1500
+  checkpoint_frq: 10
+data:
+  dataset: compas
+  input_dim: 13
+  output_dim: 1
+model:
+  loss_type: mono
+  mono_index: [0,1,2,3]
+  target_ub: 0.005
+  n_hidden: 50
+  f_latent_dim: 300
+  z_latent_dim: 200
+optim:
+  f_lr: 0.001
+  z_lr: 0.001
+  f_iter: 10
+  optimizer: Adam

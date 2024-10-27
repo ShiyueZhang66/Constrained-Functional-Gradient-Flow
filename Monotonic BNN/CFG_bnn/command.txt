@@ -1,0 +1,7 @@
+python main_bnn.py --config bnn_constrained_gwg_compas.yml --runner constrained_gwg --run results_bnn_compas --doc constrained_gwg
+
+python main_bnn.py --config bnn_pd_svgd_compas.yml --runner pd_svgd --run results_bnn_compas --doc pd_svgd
+
+python main_bnn.py --config bnn_controlled_svgd_compas.yml --runner controlled_svgd --run results_bnn_compas --doc controlled_svgd
+
+python main_bnn.py --config bnn_mied_compas.yml --runner mied --run results_bnn_compas --doc MIED

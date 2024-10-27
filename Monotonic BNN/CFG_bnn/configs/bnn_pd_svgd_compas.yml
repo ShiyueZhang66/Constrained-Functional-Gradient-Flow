@@ -1,0 +1,18 @@
+training:
+  batch_size: 200
+  n_particle: 200
+  particle_lr: 0.002
+  alpha: 1.0
+  n_iter: 6000
+  checkpoint_frq: 10
+data:
+  dataset: compas
+  input_dim: 13
+  output_dim: 1
+model:
+  loss_type: mono
+  mono_index: [0,1,2,3]
+  target_ub: 0.05
+  n_hidden: 50
+optim:
+  lambda_lr: 2
